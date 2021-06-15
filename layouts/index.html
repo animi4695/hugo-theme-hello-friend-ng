@@ -1,6 +1,11 @@
 {{ define "main" }}
     <main aria-role="main">
         <div>
+            <div class="views" style="visibility: hidden;">
+                <span class="views">
+                    <img src="https://visitor-badge.glitch.me/badge?page_id={{ .Permalink }}" alt="Views"/>
+                </span>
+            </div>
             <h1>{{ .Site.Title }}</h1>
 
             {{- with .Site.Params.homeSubtitle }}
